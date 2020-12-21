@@ -1,0 +1,31 @@
+.article6 {
+    grid-area: a6;
+    font-size: 20px;
+    width: auto;
+    border: 15px solid wheat;
+    padding: 30px;
+    margin: 5px;
+    text-align: center;
+}
+
+.article7 {
+    grid-area: a7;
+    font-size: 20px;
+    width: auto;
+    border: 15px solid wheat;
+    padding: 30px;
+    margin: 5px;
+    text-align: center;
+}
+
+.aside {
+    grid-area: as;
+    font-style: italic;
+    font-size: 20px;
+    width: auto;
+    border: 15px solid wheat;
+    padding: 30px;
+    margin: 5px;
+    text-align: center;
+
+}
