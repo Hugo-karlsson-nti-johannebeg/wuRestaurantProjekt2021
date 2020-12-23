@@ -2,43 +2,6 @@
     margin: 1px;
 }
 
-#gridwrapper3 {
-    display: grid;
-    width: 100vw;
-    height: 2vh;
-    grid-template-areas: 
-    "se he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he he"
-;
-
-grid-template-columns: repeat(50, 1fr);
-grid-template-rows: repeat(1, 1fr);
-grid-gap: 1px;
-max-width: 100%;
-}
-
-
-
-.header {
-    grid-area: he;
-    font-style: italic;
-    font-size: 70px;
-    height: 80px;
-    text-align: center;
-    color:black;
-}
-.section {
-    grid-area: se;
-}
-
-.logotyp{
-    width: 30vh;
-    height: 30vh;
-}
-
-* {
-    margin: 1px;
-}
-
 #gridwrapper {
     display: grid;
     width: 100vw;
@@ -64,8 +27,25 @@ grid-gap: 2px;
 max-width: 100%;
 }
 
+.header {
+    grid-area: he;
+    font-style: italic;
+    font-size: 70px;
+    height: 80px;
+    color:black;
+    position: left;
+}
+.section {
+    grid-area: se;
+}
 
-body {
+.logotyp{
+    width: 30vh;
+    height: 30vh;
+}
+
+
+.body {
     background-image: url(../img/purty_wood/purty_wood.png);
     background-color: #cccccc;
    }
@@ -96,15 +76,27 @@ body {
 
 .article2 {
     grid-area: a2;
-    font-size: 25px;
+    font-size: 20px;
     width: auto;
     border: 15px solid wheat;
     text-align: center;
-    position: relative;
     text-align: center;
     color:white;
     font-weight: bolder;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+.article2 .content {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 93%; 
+    padding: 20px;
+  }
 
 .delivery {
     display: block;
@@ -113,17 +105,10 @@ body {
     width: 100%;
 }
 
-.middle {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 
 .article3 {
     grid-area: a3;
-    font-size: 25px;
+    font-size: 20px;
     width: auto;
     border: 15px solid wheat;
     text-align: center;
@@ -131,7 +116,20 @@ body {
     text-align: center;
     color:white;
     font-weight: bolder;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+.article3 .content {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 93%; 
+    padding: 20px;
+  }
 
 .meny {
     display: block;
@@ -140,17 +138,10 @@ body {
     width: 100%;
 }
 
-.mid3 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 
 .article4 {
     grid-area: a4;
-    font-size: 25px;
+    font-size: 20px;
     width: auto;
     border: 15px solid wheat;
     text-align: center;
@@ -159,7 +150,20 @@ body {
     color:white;
     font-weight: bolder;
     object-fit: fill;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
 }
+
+.article4 .content {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 93%; 
+    padding: 20px;
+  }
 
 .map {
     display: block;
@@ -168,17 +172,10 @@ body {
     width: 100%;
 }
 
-.mid2 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 
 .article5 {
     grid-area: a5;
-    font-size: 25px;
+    font-size: 20px;
     width: auto;
     border: 15px solid wheat;
     text-align: center;
@@ -186,30 +183,37 @@ body {
     text-align: center;
     color:white;
     font-weight: bolder;
+    position: relative;
+    max-width: 800px;
+    margin: 0 auto;
 }
 
-.var {
+.article5 .content {
+    position: absolute; 
+    bottom: 0; 
+    background: rgb(0, 0, 0); 
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1; 
+    width: 93%; 
+    padding: 20px;
+  }
+
+  .var {
     display: block;
     margin-left: auto;
     margin-right: auto;
     width: 100%;
 }
 
-.mid4 {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
 .footer {
     grid-area: fo;
-    font-size: 30px;
+    font-size: 35px;
     width: auto;
     border: 15px solid wheat;
     padding: 30px;
     margin: 5px;
     text-align: center;
+    color: red;
 }
 
 
@@ -223,10 +227,12 @@ body {
     height: 100vh;
     grid-template-areas: 
     "se he he he"
-    "na na a12 a12"
-    "na na a12 a12"
-    "na na a12 a12"
-    "a22 a22 a22 a22"
+    "a12 a12 a22 a22"
+    "a12 a12 a22 a22"
+    "a32 a32 a42 a42"
+    "a32 a32 a42 a42"
+    "a52 a52 a52 a52"
+    "a52 a52 a52 a52"
     "fo fo fo fo"
     
 ;
@@ -237,8 +243,17 @@ grid-gap: 2px;
 max-width: 100%;
 }
 
+.header2 {
+    grid-area: he;
+    font-style: italic;
+    font-size: 70px;
+    height: 80px;
+    color:black;
+    padding-left: 10%;
+}
 
-body {
+
+.body {
     background-image: url(../img/purty_wood/purty_wood.png);
     background-color: #cccccc;
    }
@@ -265,7 +280,20 @@ body {
 
   .article22 {
     grid-area: a22;
-    font-size: 50px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 25px;
+    width: auto;
+    border: 15px solid wheat;
+    padding: 30px;
+    margin: 5px;
+    font-style: italic;
+}
+
+.article32 {
+    grid-area: a32;
+    font-size: 20px;
     width: auto;
     border: 15px solid wheat;
     text-align: center;
@@ -277,6 +305,49 @@ body {
     align-items: center;
     justify-content: space-around;
 }
+
+.article42 {
+    grid-area: a42;
+    font-size: 20px;
+    width: auto;
+    border: 15px solid wheat;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.article52 {
+    grid-area: a52;
+    font-size: 20px;
+    width: auto;
+    border: 15px solid wheat;
+    text-align: center;
+    position: relative;
+    text-align: center;
+    font-weight: bolder;
+    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.footer {
+    grid-area: fo;
+    font-size: 35px;
+    width: auto;
+    border: 15px solid wheat;
+    padding: 30px;
+    margin: 5px;
+    text-align: center;
+    color: red;
+}
+
+
 
 .logotyp {
     grid-area: se4;
@@ -303,11 +374,12 @@ body {
     "a34 a34 a34 a34"
     "a44 a44 a54 a54"
     "a44 a44 a54 a54"
+    "fo fo fo fo"
     
 ;
 
 grid-template-columns: repeat(4, 25%);
-grid-template-rows: repeat(9, 25%);
+grid-template-rows: repeat(10, 25%);
 grid-gap: 2px;
 max-width: 100%;
 }
@@ -335,7 +407,7 @@ body {
     font-style: italic;
     font-size: 70px;
     height: 80px;
-    text-align: center;
+    padding-left: 15%;
     color:black;
 }
 
@@ -439,4 +511,15 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-around;
+}
+
+.footer {
+    grid-area: fo;
+    font-size: 35px;
+    width: auto;
+    border: 15px solid wheat;
+    padding: 30px;
+    margin: 5px;
+    text-align: center;
+    color: red;
 }
