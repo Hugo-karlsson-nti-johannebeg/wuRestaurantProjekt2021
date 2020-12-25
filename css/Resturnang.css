@@ -22,7 +22,7 @@
 ;
 
 grid-template-columns: repeat(4, 25%);
-grid-template-rows: repeat(10, 25%);
+grid-template-rows: repeat(11, 25%);
 grid-gap: 2px;
 max-width: 100%;
 }
@@ -33,7 +33,7 @@ max-width: 100%;
     font-size: 70px;
     height: 80px;
     color:black;
-    position: left;
+    padding-right: 17%;
 }
 .section {
     grid-area: se;
@@ -198,7 +198,7 @@ max-width: 100%;
     padding: 20px;
   }
 
-  .var {
+.var {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -238,7 +238,7 @@ max-width: 100%;
 ;
 
 grid-template-columns: repeat(4, 25%);
-grid-template-rows: repeat(7, 25%);
+grid-template-rows: repeat(8, 25%);
 grid-gap: 2px;
 max-width: 100%;
 }
@@ -249,21 +249,15 @@ max-width: 100%;
     font-size: 70px;
     height: 80px;
     color:black;
-    padding-left: 10%;
+    padding-left: 15%;
 }
 
 
 .body {
     background-image: url(../img/purty_wood/purty_wood.png);
     background-color: #cccccc;
-   }
+}
 
-.center2 {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-  }
 
   .article12 {
     grid-area: a12;
@@ -293,7 +287,7 @@ max-width: 100%;
 
 .article32 {
     grid-area: a32;
-    font-size: 20px;
+    font-size: 40px;
     width: auto;
     border: 15px solid wheat;
     text-align: center;
@@ -308,7 +302,7 @@ max-width: 100%;
 
 .article42 {
     grid-area: a42;
-    font-size: 20px;
+    font-size: 40px;
     width: auto;
     border: 15px solid wheat;
     text-align: center;
@@ -388,18 +382,6 @@ max-width: 100%;
 body {
     background-image: url(../img/purty_wood/purty_wood.png);
     background-color: #cccccc;
-   }
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    height: 100%;
-}
-
-.nav {
-    grid-area: na;
-    
 }
 
 .header4 {
@@ -407,7 +389,7 @@ body {
     font-style: italic;
     font-size: 70px;
     height: 80px;
-    padding-left: 15%;
+    padding-left: 18%;
     color:black;
 }
 
@@ -422,7 +404,7 @@ body {
 
 .nav4 {
     grid-area: na4;
-    font-size: 20px;
+    font-size: 30px;
     width: auto;
     border: 15px solid wheat;
     text-align: center;

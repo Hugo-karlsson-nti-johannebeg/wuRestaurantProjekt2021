@@ -26,3 +26,20 @@
 
     <article class="article6"><h5>article6</h5></article>
 <article class="article7"><h5>article7</h5></article>
+
+
+
+.center2 {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+  }
+
+
+  .center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 100%;
+}
